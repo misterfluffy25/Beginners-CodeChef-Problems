@@ -1,0 +1,69 @@
+WRITTEN BY - KUNWAR YASHASWEE CHHAUNKER
+
+PROBLEM - 
+
+Three numbers A, B and C are the inputs. Write a program to find second largest among them.
+
+Input
+The first line contains an integer T, the total number of testcases. Then T lines follow, each line contains three integers A, B and C.
+
+Output
+For each test case, display the second largest among A, B and C, in a new line.
+
+Constraints
+1 ≤ T ≤ 1000
+1 ≤ A,B,C ≤ 1000000
+Example
+Input
+3 
+120 11 400
+10213 312 10
+10 3 450
+
+Output
+
+120
+312
+10
+
+SOLUTION -
+
+WRITTEN BY - KUNWAR YASHASWEE CHHAUNKER 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long long int t;
+	cin>>t;
+	while(t--){
+	    long long int num1, num2, num3;
+	    cin>>num1>>num2>>num3;
+	    
+	    if(num1>=num2 && num1>=num3){
+	        
+	        
+	        if(num2>=num3){
+	            cout<<num2<<endl;
+	             }
+	               else{
+	                cout<<num3<<endl;
+	                }
+	                }
+	                 else if(num2>=num1 && num2>=num3){
+	        
+	    if(num1>=num3){
+	        cout<<num1<<endl;
+	    }else{
+	        cout<<num3<<endl;
+	    }
+	    }
+	    else if(num1>=num2){
+	        cout<<num1<<endl;
+	    }else{
+	        cout<<num2<<endl;
+	    }
+	}
+	return 0;
+}
