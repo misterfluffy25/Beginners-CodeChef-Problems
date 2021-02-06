@@ -30,3 +30,18 @@ SOLUTION -
 
 WRITTEN BY -  KUNWAR YASHASWEE CHHAUNKER
 
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int number, i;
+    cin>>number;
+    int arr[number];
+    for(i = 0 ; i < number ; i++){
+        cin>>arr[i];
+    }
+    sort(arr, arr + number);
+    for( i = 0 ; i < number ; i++){
+        cout<<arr[i]<<endl;
+    }
+    return 0;
+}
